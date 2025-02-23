@@ -10,8 +10,11 @@
     <%= form.text_area :description %>
   </p>
   <p>
-    <%= form.label :date %><br>
-    <%= form.date_field :date %>
+ <p>
+  <label for="occurred_on">Date:</label>
+  <input type="date" name="entry[occurred_on]" id="occurred_on" />
+</p>
+
   </p>
   <p>
     <%= form.submit "Create Entry" %>
